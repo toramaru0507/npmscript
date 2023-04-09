@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="/libs/react.development.js"></script>
+  <script src="/libs/react-dom.development.js"></script>
+  <script src="/libs/babel-standalone.js"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="text/babel">
+    const appEl = document.querySelector('#app');
+    const root = ReactDOM.createRoot(appEl);
+    // function exsample() {
+    //   return <h1>Hello Componets</h1>
+    // }
+
+    // アロー関数
+    const Exsample = () => (
+        <div>
+          <h1>Hello Componets</h1>
+        </div>
+    )
+
+    const a = () => {
+      return (
+        "返り値"
+      )
+    }
+    console.log(a());
+
+    root.render(<Exsample />);
+  </script>
+</body>
+
+</html>
